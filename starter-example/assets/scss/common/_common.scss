@@ -18,4 +18,238 @@ a {
   color: inherit;
   text-decoration: none;
 }
+body {
+  margin: 0;
+}
+section {
+  margin-bottom: 10%;
+}
+/* Header  */
+header {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+}
+header img {
+  width: 150px;
+}
+h1 {
+  color: var(--texte);
+  font-weight: 100;
+}
+/* Home  */
+.Home {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.Home__div1 {
+  width: 3%;
+}
+.Home__div1 > div {
+  flex-direction: column-reverse;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.Home__div1 > div > div {
+  width: 100%;
+}
+.Home__div1 > div > div p {
+  transform: rotate(-90deg);
+  font-family: "Raleway";
+  color: var(--texte);
+  white-space: nowrap;
+  margin-bottom: 45px;
+  font-weight: 600;
+}
+.Home__div1 > div img {
+  width: 30px;
+  justify-content: center;
+  padding: 8%;
+  margin-bottom: 15px;
+}
+.Home__div2 {
+  overflow: hidden;
+  width: 94%;
+}
+.Home__div2 img {
+  width: 100%;
+  height: 100%;
+}
+/*  Bouee  */
+.Bouee {
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  height: auto;
+  flex-wrap: wrap;
+  margin-bottom: 15%;
+}
+.Bouee__img {
+  width: 50%;
+}
+.Bouee__text {
+  width: 50%;
+}
+.Bouee__text > div {
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.Bouee__img img {
+  width: 80%;
+  height: 100%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
 
+/*  lights  */
+.Lights {
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  height: auto;
+  flex-wrap: wrap;
+}
+.Lights__img {
+  width: 50%;
+}
+.Lights__text {
+  width: 50%;
+}
+.Lights__text > div {
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+#Lights__text_span {
+  margin-left: 45px;
+}
+.Lights__img img {
+  width: 80%;
+  height: 100%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+/* Grid */
+.Choix {
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  height: auto;
+  flex-wrap: wrap;
+}
+.Grid__text {
+  width: 100%;
+}
+.Grid__text h1,
+p {
+  text-align: center;
+}
+.Grid__choix {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 500px;
+}
+.Grid__choix div img {
+  width: 100%;
+  height: 100%;
+}
+.Grid__choix div p {
+  position: relative;
+  display: flex;
+  bottom: 70px;
+  color: aliceblue;
+  left: 20px;
+  text-transform: uppercase;
+}
+.Grid__choix div span {
+  position: absolute;
+  display: flex;
+  top: 20px;
+  width: 100%;
+}
+.Grid__choix div h1 {
+  position: relative;
+  display: block;
+  color: aliceblue;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+}
+.Grid__titre1 {
+  top: 50px;
+}
+.Grid__titre2 {
+  top: 88px;
+}
+.Grid__titre3 {
+  top: 105px;
+}
+/* Before Contact */
+.Before_contact {
+  color: var(--texte);
+}
+.Before_contact > div {
+  display: flex;
+  margin-left: 18%;
+}
+.Before_contact > div > p {
+  display: flex;
+  align-items: flex-start;
+}
+.Before_contact > div > img {
+  width: 30px;
+  margin-right: 15px;
+  margin-top: 8px;
+}
+/* Contact */
+.Contact {
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  height: auto;
+  flex-wrap: wrap;
+  margin-bottom: 15%;
+}
+.Contact__form {
+  width: 50%;
+}
+.Contact__text {
+  width: 50%;
+}
+
+/* Footer*/
+footer {
+  background-color: var(--texte);
+  width: 100%;
+  height: 400px;
+}
+footer img {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6%;
+}
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}

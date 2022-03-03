@@ -340,4 +340,319 @@ a {
   color: inherit;
   text-decoration: none; }
 
+body {
+  margin: 0; }
+
+section {
+  margin-bottom: 10%; }
+
+/* Header  */
+header {
+  padding: 0.625rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+header img {
+  width: 9.375rem; }
+
+h1 {
+  color: var(--texte);
+  font-weight: 100; }
+
+/* Home  */
+.Home {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.Home__div1 {
+  width: 3%; }
+
+.Home__div1 > div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+     -moz-box-orient: vertical;
+     -moz-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%; }
+
+.Home__div1 > div > div {
+  width: 100%; }
+
+.Home__div1 > div > div p {
+  -webkit-transform: rotate(-90deg);
+     -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-family: "Raleway";
+  color: var(--texte);
+  white-space: nowrap;
+  margin-bottom: 2.8125rem;
+  font-weight: 600; }
+
+.Home__div1 > div img {
+  width: 1.875rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8%;
+  margin-bottom: 0.9375rem; }
+
+.Home__div2 {
+  overflow: hidden;
+  width: 94%; }
+
+.Home__div2 img {
+  width: 100%;
+  height: 100%; }
+
+/*  Bouee  */
+.Bouee {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  height: auto;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 15%; }
+
+.Bouee__img {
+  width: 50%; }
+
+.Bouee__text {
+  width: 50%; }
+
+.Bouee__text > div {
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%; }
+
+.Bouee__img img {
+  width: 80%;
+  height: 100%;
+  margin-right: 10%;
+  margin-left: 10%; }
+
+/*  lights  */
+.Lights {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  height: auto;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.Lights__img {
+  width: 50%; }
+
+.Lights__text {
+  width: 50%; }
+
+.Lights__text > div {
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%; }
+
+#Lights__text_span {
+  margin-left: 2.8125rem; }
+
+.Lights__img img {
+  width: 80%;
+  height: 100%;
+  margin-right: 10%;
+  margin-left: 10%; }
+
+/* Grid */
+.Choix {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  height: auto;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.Grid__text {
+  width: 100%; }
+
+.Grid__text h1,
+p {
+  text-align: center; }
+
+.Grid__choix {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.25rem 1fr 1.25rem 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.25rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 31.25rem; }
+
+.Grid__choix div img {
+  width: 100%;
+  height: 100%; }
+
+.Grid__choix div p {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 4.375rem;
+  color: aliceblue;
+  left: 1.25rem;
+  text-transform: uppercase; }
+
+.Grid__choix div span {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 1.25rem;
+  width: 100%; }
+
+.Grid__choix div h1 {
+  position: relative;
+  display: block;
+  color: aliceblue;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-90deg);
+     -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
+
+.Grid__titre1 {
+  top: 3.125rem; }
+
+.Grid__titre2 {
+  top: 5.5rem; }
+
+.Grid__titre3 {
+  top: 6.5625rem; }
+
+/* Before Contact */
+.Before_contact {
+  color: var(--texte); }
+
+.Before_contact > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 18%; }
+
+.Before_contact > div > p {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.Before_contact > div > img {
+  width: 1.875rem;
+  margin-right: 0.9375rem;
+  margin-top: 0.5rem; }
+
+/* Contact */
+.Contact {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  height: auto;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 15%; }
+
+.Contact__form {
+  width: 50%; }
+
+.Contact__text {
+  width: 50%; }
+
+/* Footer*/
+footer {
+  background-color: var(--texte);
+  width: 100%;
+  height: 25rem; }
+
+footer img {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6%; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
 /*# sourceMappingURL=styles.css.map */
