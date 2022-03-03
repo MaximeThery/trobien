@@ -252,7 +252,14 @@ p {
 .Contact__text img{
   width: 20px;
 }
-
+.Contact__text div{
+display: flex;
+}
+.Contact__text div p{
+  font-size: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
+  }
 /* Footer*/
 footer {
   background-color: var(--texte);
