@@ -178,6 +178,10 @@ h1 {
   margin: auto;
   justify-content: space-between;
 }
+.Grid__choix a:hover img{
+  transform: scale(2);
+
+}
 .Grid__choix > div {
   width: 37.5rem;
   height: 55rem;
@@ -188,6 +192,8 @@ h1 {
   max-width: none;
   height: 100%;
   margin-left: -7rem;
+  transition: all 1s;
+  transform-origin: center;
 }
 .Grid__choix div p {
   right: 39%;
@@ -208,6 +214,7 @@ h1 {
 }
 
 .Grid__choix div h1 {
+  z-index: 1;
   position: absolute;
   display: block;
   color: aliceblue;
