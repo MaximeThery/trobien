@@ -169,8 +169,7 @@ h1 {
 .Grid__text {
   width: 100%;
 }
-.Grid__text h1,
-p {
+.Grid__text h1{
   text-align: center;
 }
 .Grid__choix {
@@ -183,6 +182,7 @@ p {
   width: 37.5rem;
   height: 55rem;
   overflow: hidden;
+  position: relative;
 }
 .Grid__choix > div img {
   max-width: none;
@@ -190,11 +190,14 @@ p {
   margin-left: -7rem;
 }
 .Grid__choix div p {
-  position: relative;
+  right: 39%;
+  text-align: left;
+  font-size: 1.5rem;
+  position: absolute;
   display: flex;
-  bottom: 20%;
+  bottom: 1rem;
   color: aliceblue;
-  left: 20px;
+  left: 1rem;
   text-transform: uppercase;
 }
 .Grid__choix div span {
@@ -205,11 +208,13 @@ p {
 }
 
 .Grid__choix div h1 {
-  position: relative;
+  position: absolute;
   display: block;
   color: aliceblue;
   text-transform: uppercase;
   transform: rotate(-90deg);
+  width: 37.5rem;
+  font-size: 4rem;
 }
 .Grid__titre1 {
   top: 50px;
