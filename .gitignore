@@ -2,3 +2,5 @@ starter-example/node_modules
 trobien-brief.pdf
 maquette
 starter-example/assets/css
+starter-example/assets/js/script.bundle.js
+.idea/trobien.iml
