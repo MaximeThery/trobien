@@ -40,7 +40,6 @@ h1 {
 /* Home  */
 .Home {
   display: flex;
-  height: 100vh;
   width: 100%;
   flex-wrap: wrap;
 }
@@ -82,8 +81,9 @@ h1 {
 /*  Bouee  */
 .Bouee {
   display: flex;
+  max-width: 150rem;
   width: 90%;
-  margin-left: 5%;
+  margin : auto;
   height: auto;
   flex-wrap: wrap;
   margin-bottom: 15%;
@@ -109,8 +109,9 @@ h1 {
 /*  lights  */
 .Lights {
   display: flex;
+  max-width: 150rem;
   width: 90%;
-  margin-left: 5%;
+  margin: auto;
   height: auto;
   flex-wrap: wrap;
 }
@@ -138,8 +139,8 @@ h1 {
 /* Grid */
 .Choix {
   display: flex;
-  width: 90%;
-  margin-left: 5%;
+  max-width: 150rem;
+  margin: auto;
   height: auto;
   flex-wrap: wrap;
 }
@@ -151,16 +152,51 @@ p {
   text-align: center;
 }
 .Grid__choix {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  padding-left: 10%;
-  padding-right: 10%;
-  height: 500px;
+  display: flex;
+  width: 115.39rem;
+  margin: auto;
+  justify-content: space-between;
 }
-.Grid__choix > img {
-  width: 100%;
+.Grid__choix > div {
+  width: 37.5rem;
+  height: 55rem;
+  overflow: hidden;
+}
+.Grid__choix > div img {
+  max-width: none;
   height: 100%;
+  margin-left: -7rem;
+}
+.Grid__choix div p {
+  position: relative;
+  display: flex;
+  bottom: 20%;
+  color: aliceblue;
+  left: 20px;
+  text-transform: uppercase;
+}
+.Grid__choix div span {
+  position: absolute;
+  display: flex;
+  top: 20px;
+  width: 100%;
+}
+
+.Grid__choix div h1 {
+  position: relative;
+  display: block;
+  color: aliceblue;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+}
+.Grid__titre1 {
+  top: 50px;
+}
+.Grid__titre2 {
+  top: 88px;
+}
+.Grid__titre3 {
+  top: 105px;
 }
 /* Before Contact */
 .Before_contact {
@@ -182,8 +218,9 @@ p {
 /* Contact */
 .Contact{
   display: flex;
+  max-width: 150rem;
   width: 90%;
-  margin-left: 5%;
+  margin: auto;
   height: auto;
   flex-wrap: wrap;
   margin-bottom: 15%;
@@ -194,7 +231,6 @@ p {
 .Contact__text {
   width: 50%;
 }
-
 /* Footer*/
 footer {
   background-color: var(--texte);
@@ -222,4 +258,8 @@ main {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+}
+.barre{
+  height: 30rem;
+  width: auto;
 }
