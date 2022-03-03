@@ -237,10 +237,6 @@ h1 {
   display: flex;
   align-items: center;
 }
-.Before_contact_div2 img{
-  width: 30px;
-}
-
 /* Contact */
 
 .Contact{
@@ -258,6 +254,10 @@ h1 {
 .Contact__text {
   width: 50%;
 }
+.Contact__text img{
+  width: 20px;
+}
+
 /* Footer*/
 footer {
   background-color: var(--texte);

@@ -19,9 +19,9 @@
     "vanilla-tilt": "^1.7.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.7",
+    "@babel/core": "^7.17.5",
     "@babel/polyfill": "^7.2.5",
-    "@babel/preset-env": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
     "autoprefixer": "^10.4.2",
     "babel-loader": "^8.2.3",
     "browser-sync": "^2.27.7",
@@ -31,7 +31,7 @@
     "gulp-pxtorem": "^3.0.0",
     "gulp-sass": "^4.1.1",
     "gulp-sourcemaps": "^3.0.0",
-    "postcss": "^8.4.5",
+    "postcss": "^8.4.7",
     "postcss-flexbugs-fixes": "^5.0.2",
     "webpack-stream": "^6.1.2"
   },
