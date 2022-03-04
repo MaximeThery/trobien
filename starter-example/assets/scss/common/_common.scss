@@ -1,5 +1,27 @@
-:root {
-  --texte: #ff0068;
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  color: var(--texte);
+  font-weight: 100;
+}
+.barre{
+  height: 30rem;
+  width: auto;
+}
+
+:root{
+--texte:#FF0068;
 }
 
 * {
@@ -37,10 +59,7 @@ header {
 header img {
   width: 150px;
 }
-h1 {
-  color: var(--texte);
-  font-weight: 100;
-}
+
 /* Home  */
 .Home {
   display: flex;
@@ -74,29 +93,60 @@ h1 {
   padding: 8%;
   margin-bottom: 15px;
 }
+
 .Home__div2 {
   overflow: hidden;
   width: 94%;
+  position: relative;
+}
+.titre_home{
+  position: absolute;
+  text-transform: uppercase;
+  color: black;
+  font-size: 7rem;
+  width: 43.8rem;
+  top: 0;
+  bottom: 0;
+  left: 10rem;
+  display: flex;
+  margin: 0;
+  align-items: center;
 }
 .Home__div2 img {
   width: 100%;
   height: 100%;
 }
-#fond {
-  position: relative;
-}
-#girafe {
+
+#girafe2{
+  z-index: 1;
+  background-image: url("/assets/images/giraffe2.png");
+  background-size: 35rem;
+  background-repeat: no-repeat;
+  background-position: rigth;
   display: flex;
   position: absolute;
-  width: 30%;
-  height: auto;
-  top: 300px;
+  width: 40rem ;
+  height: 30rem;
+  top: 7.5rem;
   right: 0;
+  animation-duration: 9s;
+  animation-name: girafe;
+  animation-iteration-count: infinite;
+  transform: translate3d(0,0,0);
 }
-#girafe2 {
+
+#girafe{
+  background-position: bottom;
+  z-index: 1;
+  background-image: url("/assets/images/giraffe.png");
+  background-size: 30rem;
+  background-repeat: no-repeat;
   display: flex;
-  position: relative;
-  width: 20px;
+  position: absolute;
+  width: 30rem;
+  height: 71rem;
+  bottom: 0;
+  right: 30rem;
 }
 
 /*  Bouee  */
@@ -168,8 +218,7 @@ h1 {
 .Grid__text {
   width: 100%;
 }
-.Grid__text h1,
-p {
+.Grid__text h1{
   text-align: center;
 }
 .Grid__choix {
@@ -178,22 +227,32 @@ p {
   margin: auto;
   justify-content: space-between;
 }
+.Grid__choix a:hover img{
+  transform: scale(2);
+
+}
 .Grid__choix > div {
   width: 37.5rem;
   height: 55rem;
   overflow: hidden;
+  position: relative;
 }
 .Grid__choix > div img {
   max-width: none;
   height: 100%;
   margin-left: -7rem;
+  transition: all 1s;
+  transform-origin: center;
 }
 .Grid__choix div p {
-  position: relative;
+  right: 39%;
+  text-align: left;
+  font-size: 1.5rem;
+  position: absolute;
   display: flex;
-  bottom: 20%;
+  bottom: 1rem;
   color: aliceblue;
-  left: 20px;
+  left: 1rem;
   text-transform: uppercase;
 }
 .Grid__choix div span {
@@ -204,11 +263,14 @@ p {
 }
 
 .Grid__choix div h1 {
-  position: relative;
+  z-index: 1;
+  position: absolute;
   display: block;
   color: aliceblue;
   text-transform: uppercase;
   transform: rotate(-90deg);
+  width: 37.5rem;
+  font-size: 4rem;
 }
 .Grid__titre1 {
   top: 50px;
@@ -320,19 +382,4 @@ footer img {
   margin-left: auto;
   margin-right: auto;
   padding-top: 6%;
-}
-/**
- * Render the `main` element consistently in IE.
- */
-main {
-  display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
 }
