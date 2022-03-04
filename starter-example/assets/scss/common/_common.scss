@@ -77,27 +77,45 @@ h1 {
 .Home__div2 {
   overflow: hidden;
   width: 94%;
+  position: relative;
 }
 .Home__div2 img {
-  
   width: 100%;
   height: 100%;
 }
 #fond{
   position: relative;
 }
-#girafe{
+#girafe2{
+  z-index: 1;
+  background-image: url("/assets/images/giraffe2.png");
+  background-size: 35rem;
+  background-repeat: no-repeat;
+  background-position: rigth;
   display: flex;
   position: absolute;
-  width: 30%;
-  height: auto;
-  top: 300px;
+  width: 40rem ;
+  height: 30rem;
+  top: 7.5rem;
   right: 0;
+  animation-duration: 9s;
+  animation-name: girafe;
+  animation-iteration-count: infinite;
+  transform: translate3d(0,0,0);
 }
-#girafe2{
+
+#girafe{
+  background-position: bottom;
+  z-index: 1;
+  background-image: url("/assets/images/giraffe.png");
+  background-size: 30rem;
+  background-repeat: no-repeat;
   display: flex;
-  position: relative;
-  width: 20px;
+  position: absolute;
+  width: 30rem;
+  height: 71rem;
+  bottom: 0;
+  right: 30rem;
 }
 
 /*  Bouee  */
