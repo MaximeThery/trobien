@@ -1,0 +1,22 @@
+@keyframes girafe {
+  from{
+    background-position-x: 15rem;
+  }
+  50% {
+    background-position-x: 10rem;
+  }
+  to{
+    background-position-x: 15rem;
+  }
+}
+
+@keyframes Title {
+  0% {
+    transform: translate(-150%,0);
+   
+  }
+  100% {
+    transform: translate(0,0);
+  
+  }
+}
