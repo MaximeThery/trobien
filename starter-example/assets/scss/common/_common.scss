@@ -192,10 +192,23 @@ header img {
 .Lights__text {
   width: 50%;
 }
-.Lights__text > div {
+.Lights__text  div {
   width: 80%;
-  margin-right: 10%;
   margin-left: 10%;
+}
+.Lights__text  div > p{
+  text-align: end;
+ width: 46%;
+ flex: wrap;
+}
+
+.Lights__text  div > button{
+  background-color: #FF0068;
+  cursor: pointer;
+  color: white;
+  border: none;
+  padding: 8px;
+  margin-left: 200px;
 }
 #Lights__text_span {
   margin-left: 45px;
@@ -228,7 +241,7 @@ header img {
   justify-content: space-between;
 }
 .Grid__choix a:hover img{
-  transform: scale(2);
+  transform: scale(1.5);
 
 }
 .Grid__choix > div {
