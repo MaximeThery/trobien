@@ -228,9 +228,19 @@ p {
   display: flex;
   margin-left: 18%;
 }
-.Before_contact_div2{
-  display: flex;
-  align-items: center;
+
+.Before_contact_div2 div{
+display: flex;
+}
+.Before_contact_div2 p{
+  font-size: 35px;
+  text-align: start;
+  }
+.Before_contact_div2 div img{
+  width: 30px;
+}
+.Before_contact_div2 div{
+  width: 30px;
 }
 /* Contact */
 
