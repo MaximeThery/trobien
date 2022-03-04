@@ -158,6 +158,7 @@ header img {
   height: auto;
   flex-wrap: wrap;
   margin-bottom: 15%;
+  align-items: center;
 }
 .Bouee__img {
   width: 50%;
@@ -165,16 +166,26 @@ header img {
 .Bouee__text {
   width: 50%;
 }
+.Bouee__text h1{
+  font-size: 4rem;
+  margin-bottom: 6rem;
+}
 .Bouee__text > div {
+  font-size: 2rem;
   width: 80%;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 20%;
+}
+.Bouee__text > div p:nth-child(2n+1){
+  margin-bottom: 5rem;
+}
+.Bouee__text a{
+  background-color: var(--texte);
+  border-radius: 1rem;
+  padding: 1rem 3rem 1rem 1rem;
+  color: white;
 }
 .Bouee__img img {
-  width: 80%;
-  height: 100%;
-  margin-right: 10%;
-  margin-left: 10%;
+  width: 100%;
 }
 
 /*  lights  */
@@ -183,23 +194,37 @@ header img {
   max-width: 150rem;
   width: 90%;
   margin: auto;
+  margin-bottom: 7.5%;
   height: auto;
   flex-wrap: wrap;
 }
 .Lights__img {
   width: 50%;
 }
+.Lights__text a{
+  background-color: var(--texte);
+  border-radius: 1rem;
+  color: white;
+  display: inline-block;
+  margin-top: 5rem;
+  padding: 1rem 3rem 1rem 1rem;
+}
 .Lights__text {
+  text-align: right;
   width: 50%;
 }
+.Lights__text h1{
+  font-size: 4rem;
+  margin-bottom: 6rem;
+  margin-top: 0;
+}
 .Lights__text  div {
-  width: 80%;
-  margin-left: 10%;
+  font-size: 2rem;
+  margin-left: 20%;
 }
 .Lights__text  div > p{
+  margin-left: auto;
   text-align: end;
- width: 46%;
- flex: wrap;
 }
 
 .Lights__text  div > button{
@@ -214,10 +239,7 @@ header img {
   margin-left: 45px;
 }
 .Lights__img img {
-  width: 80%;
-  height: 100%;
-  margin-right: 10%;
-  margin-left: 10%;
+  width: 100%;
 }
 
 /* Grid */
@@ -230,9 +252,13 @@ header img {
 }
 .Grid__text {
   width: 100%;
+  text-align: center;
+  font-size: 2rem;
 }
 .Grid__text h1{
   text-align: center;
+  font-size: 4rem;
+  margin: 0;
 }
 .Grid__choix {
   display: flex;
@@ -241,8 +267,7 @@ header img {
   justify-content: space-between;
 }
 .Grid__choix a:hover img{
-  transform: scale(1.5);
-
+  transform: scale(1.25);
 }
 .Grid__choix > div {
   width: 37.5rem;
@@ -340,6 +365,7 @@ iframe{
 }
 .barre {
   height: 30rem;
+
   width: auto;
 }
 
