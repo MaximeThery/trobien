@@ -1,5 +1,5 @@
-:root{
---texte:#FF0068;
+:root {
+  --texte: #ff0068;
 }
 
 * {
@@ -79,14 +79,13 @@ h1 {
   width: 94%;
 }
 .Home__div2 img {
-  
   width: 100%;
   height: 100%;
 }
-#fond{
+#fond {
   position: relative;
 }
-#girafe{
+#girafe {
   display: flex;
   position: absolute;
   width: 30%;
@@ -94,7 +93,7 @@ h1 {
   top: 300px;
   right: 0;
 }
-#girafe2{
+#girafe2 {
   display: flex;
   position: relative;
   width: 20px;
@@ -105,7 +104,7 @@ h1 {
   display: flex;
   max-width: 150rem;
   width: 90%;
-  margin : auto;
+  margin: auto;
   height: auto;
   flex-wrap: wrap;
   margin-bottom: 15%;
@@ -224,27 +223,39 @@ p {
 .Before_contact {
   color: var(--texte);
 }
-.Before_contact > div  {
+.Before_contact > div {
   display: flex;
-  margin-left: 18%;
+  margin-left: 8%;
+  margin-top: 8%;
 }
 
-.Before_contact_div2 div{
-display: flex;
+.Before_contact_div2 div {
+  display: flex;
 }
-.Before_contact_div2 p{
+.Before_contact_div2 p {
   font-size: 35px;
   text-align: start;
-  }
-.Before_contact_div2 div img{
-  width: 30px;
+  padding-left: 50px;
+  padding-top:0;
 }
-.Before_contact_div2 div{
-  width: 30px;
+.Before_contact_div2 h1 {
+  font-size: 70px;
+  padding-top: 30%;
+  
 }
+.Before_contact_div2 div img {
+  width: 50px;
+  padding-top: 30%;
+  padding-left: 30%;
+}
+.barre {
+  height: 30rem;
+  width: auto;
+}
+
 /* Contact */
 
-.Contact{
+.Contact {
   display: flex;
   max-width: 150rem;
   width: 90%;
@@ -261,40 +272,42 @@ display: flex;
   padding-left: 15%;
   color: var(--texte);
   text-transform: uppercase;
-  letter-spacing : 5px
+  letter-spacing: 5px;
 }
-.Contact__text img{
+.Contact__text img {
   width: 20px;
 }
-.Contact__text div{
-display: flex;
+.Contact__text div {
+  display: flex;
 }
-.Contact__text div p{
+.Contact__text div p {
   font-size: 25px;
   margin-left: 2%;
   margin-right: 2%;
-  }
-  .Contact__form__content{
-    display: flex;
-    margin-bottom: 2%;
-    color: var(--texte);
-    font-size: 25px;
-  }
-  .Contact__form__content div{
-    margin-left: 2%;
-  }
-  .Contact__form__content div input,textarea{
-    border: none;
-    border-bottom: solid 1px #FF0068;
-  }
-  input:focus,textarea:focus{
-    outline:none;
-   }
- textarea{
+}
+.Contact__form__content {
+  display: flex;
+  margin-bottom: 2%;
+  color: var(--texte);
+  font-size: 25px;
+}
+.Contact__form__content div {
+  margin-left: 2%;
+}
+.Contact__form__content div input,
+textarea {
+  border: none;
+  border-bottom: solid 1px #ff0068;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+textarea {
   width: 620px;
   height: 100px;
   resize: none;
- }
+}
 /* Footer*/
 footer {
   background-color: var(--texte);
@@ -322,8 +335,4 @@ main {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
-}
-.barre{
-  height: 30rem;
-  width: auto;
 }
