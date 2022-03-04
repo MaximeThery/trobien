@@ -122,12 +122,11 @@ header img {
   background-image: url("/assets/images/giraffe2.png");
   background-size: 35rem;
   background-repeat: no-repeat;
-  background-position: rigth;
   display: flex;
   position: absolute;
   width: 40rem ;
   height: 30rem;
-  top: 7.5rem;
+  top: 17.5%;
   right: 0;
   animation-duration: 9s;
   animation-name: girafe;
@@ -138,13 +137,18 @@ header img {
 #girafe{
   background-position: bottom;
   z-index: 1;
-  background-image: url("/assets/images/giraffe.png");
-  background-size: 30rem;
+  background-image: url(/assets/images/giraffe.png);
+  -moz-background-size: 30rem;
+  background-size: contain;
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
-  width: 30rem;
-  height: 71rem;
+  width: 22%;
+  height: 85%;
   bottom: 0;
   right: 30rem;
 }
@@ -174,6 +178,14 @@ header img {
   font-size: 2rem;
   width: 80%;
   margin-right: 20%;
+  position: relative;
+}
+.Bouee__text iframe{
+  top: 1rem;
+  right: 102%;
+  width: 10%;
+  height: 10%;
+  position: absolute;
 }
 .Bouee__text > div p:nth-child(2n+1){
   margin-bottom: 5rem;
@@ -323,6 +335,7 @@ header img {
 .Before_contact {
   color: var(--texte);
 }
+
 .Before_contact > div {
   display: flex;
   margin-left: 8%;
