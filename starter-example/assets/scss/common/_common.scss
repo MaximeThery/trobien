@@ -260,6 +260,10 @@ h1 {
 }
 .Contact__text {
   width: 50%;
+  padding-left: 15%;
+  color: var(--texte);
+  text-transform: uppercase;
+  letter-spacing : 5px
 }
 .Contact__text img{
   width: 20px;
@@ -268,10 +272,31 @@ h1 {
 display: flex;
 }
 .Contact__text div p{
-  font-size: 20px;
+  font-size: 25px;
   margin-left: 2%;
   margin-right: 2%;
   }
+  .Contact__form__content{
+    display: flex;
+    margin-bottom: 2%;
+    color: var(--texte);
+    font-size: 25px;
+  }
+  .Contact__form__content div{
+    margin-left: 2%;
+  }
+  .Contact__form__content div input,textarea{
+    border: none;
+    border-bottom: solid 1px #FF0068;
+  }
+  input:focus,textarea:focus{
+    outline:none;
+   }
+ textarea{
+  width: 620px;
+  height: 100px;
+  resize: none;
+ }
 /* Footer*/
 footer {
   background-color: var(--texte);
