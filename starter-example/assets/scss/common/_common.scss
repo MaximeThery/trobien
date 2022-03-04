@@ -1,3 +1,25 @@
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  color: var(--texte);
+  font-weight: 100;
+}
+.barre{
+  height: 30rem;
+  width: auto;
+}
+
 :root{
 --texte:#FF0068;
 }
@@ -37,10 +59,7 @@ header {
 header img {
   width: 150px;
 }
-h1 {
-  color: var(--texte);
-  font-weight: 100;
-}
+
 /* Home  */
 .Home {
   display: flex;
@@ -74,17 +93,28 @@ h1 {
   padding: 8%;
   margin-bottom: 15px;
 }
+
 .Home__div2 {
   overflow: hidden;
   width: 94%;
   position: relative;
 }
+.titre_home{
+  position: absolute;
+  text-transform: uppercase;
+  color: black;
+  font-size: 7rem;
+  width: 43.8rem;
+  top: 0;
+  bottom: 0;
+  left: 10rem;
+  display: flex;
+  margin: 0;
+  align-items: center;
+}
 .Home__div2 img {
   width: 100%;
   height: 100%;
-}
-#fond{
-  position: relative;
 }
 #girafe2{
   z-index: 1;
@@ -337,23 +367,4 @@ footer img {
   margin-left: auto;
   margin-right: auto;
   padding-top: 6%;
-}
-/**
- * Render the `main` element consistently in IE.
- */
-main {
-  display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-.barre{
-  height: 30rem;
-  width: auto;
 }
