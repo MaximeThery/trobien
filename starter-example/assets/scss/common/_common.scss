@@ -3,6 +3,7 @@
  */
 main {
   display: block;
+  overflow: hidden;
 }
 
 /**
@@ -252,7 +253,6 @@ header img {
 .Lights__text {
   text-align: right;
   width: 50%;
-  overflow: hidden;
 }
 .Lights__text h1{
   font-size: 4rem;
