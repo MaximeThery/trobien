@@ -196,8 +196,33 @@ header img {
   padding: 1rem 3rem 1rem 1rem;
   color: white;
 }
-.Bouee__img img {
-  width: 100%;
+.Bouee__img{
+  background-color: #F8AF00;
+  padding-top: 43%;
+  position: relative;
+  overflow: hidden;
+}
+.Bouee__img img:nth-child(1){
+  position: absolute;
+  bottom: -14%;
+  max-width: none;
+  left: -5rem;
+  right: -10rem;
+  width: 115%;
+  z-index: 2;
+}
+
+.Bouee__img .bras-2{
+  position: absolute;
+  bottom: -5%;
+  z-index: 1;
+  right: 43%;
+}
+.Bouee__img .bras{
+  position: absolute;
+  top: -15%;
+  z-index: 1;
+  left: 0%;
 }
 
 /*  lights  */
@@ -212,6 +237,7 @@ header img {
 }
 .Lights__img {
   width: 50%;
+
 }
 .Lights__text a{
   background-color: var(--texte);
