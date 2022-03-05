@@ -31,6 +31,10 @@ class Menu {
                         console.log("elle est passé en viewport",id);
                         entry.target.classList.add("light-visible");
                     }
+                    else if (id === "barre"){
+                        console.log("elle est passé en viewport",id);
+                        entry.target.classList.add("barre-visible");
+                    }
                 }
                 else {
                     if (id === "bouee"){
@@ -40,6 +44,10 @@ class Menu {
                     else if (id === "light"){
                         console.log("viewport est partie",id);
                         entry.target.classList.remove("light-visible");
+                    }
+                    else if (id === "barre"){
+                        console.log("viewport est partie",id);
+                        entry.target.classList.remove("barre-visible");
                     }
                 }
             })
