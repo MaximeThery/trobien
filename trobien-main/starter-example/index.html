@@ -13,6 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     document.documentElement.className = document.documentElement.className.replace("no-js", "js");
   </script>
@@ -36,7 +38,8 @@
       </div>
       <div class="Home__div2">
         <h1 class="titre_home">Une agence qui est (trop) bien</h1>
-        <img id="fond" src="/assets/images/fond.png" alt="image de la page d'accueil avec le texte Une agence qui est trop bien et deux girafes">
+        <img id="fond" src="/assets/images/fond.png"
+          alt="image de la page d'accueil avec le texte Une agence qui est trop bien et deux girafes">
         <div id="girafe"></div>
         <div id="girafe2"></div>
       </div>
@@ -45,14 +48,20 @@
     <section class="Bouee">
       <div class="Bouee__text">
         <div>
-          <iframe src="assets/images/svg/quotes.svg">
-            <img  alt="Image de guillemets pour une citation" class="quotes">
-          </iframe>
-          <h1>L'internet c'est pas simple <br>mais c'est fun aussi !</h1>
-          <p>Vous avez envie d'avoir un site pour vendre vos bidules ? Vous avez envie de communiquer sur le web comme
-            un dieu mais vous savez pas faire ? Faites nous confiance, on est super fort ...</p>
-          <p>Il y a plein d'agences web mais la notre elle est mieux car elle est trobien</p>
-          <a href="#">Besoin d'un contact ?</a>
+
+
+          <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <iframe src="assets/images/svg/quotes.svg">
+              <img alt="Image de guillemets pour une citation" class="quotes">
+            </iframe>
+            <h1>L'internet c'est pas simple <br>mais c'est fun aussi !</h1>
+          </div>
+          <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-offset="200">
+            <p>Vous avez envie d'avoir un site pour vendre vos bidules ? Vous avez envie de communiquer sur le web comme
+              un dieu mais vous savez pas faire ? Faites nous confiance, on est super fort ...</p>
+            <p>Il y a plein d'agences web mais la notre elle est mieux car elle est trobien</p>
+          </div>
+          <div data-aos="fade-up-right" data-aos-offset="250"><a href="#">Besoin d'un contact ?</a></div>
         </div>
       </div>
       <div class="Bouee__img">
@@ -66,12 +75,16 @@
       </div>
       <div class="Lights__text">
         <div>
-          <h1>Franchement ... faites nous<br><span id="Lights__text_span">confiance ... ça ira bien !</span></h1>
-          <p>Parce qu'il y a plein de gens ... qui se la racontent, mais qui ne savent pas y faire. Nous franchement, on a
-            du talent ! Regardez notre site comment il marche trop bien ! Vous voulez la même chose ?</p>
-          <p>Alors ouais ça vous coutera du pognon de dingue ...</p>
-          <p>On a rien sans rien comme on dit !</p>
-          <a href="#">C'est par ici qu'on signe</a>
+          <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <h1>Franchement ... faites nous<span id="Lights__text_span">confiance ... ça ira bien !</span></h1>
+          </div>
+          <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-offset="200">
+            <p>Parce qu'il y a plein de gens ... qui se la racontent, mais qui ne savent pas y faire. Nous franchement,
+              on a du talent ! Regardez notre site comment il marche trop bien ! Vous voulez la même chose ?</p>
+            <p>Alors ouais ça vous coutera du pognon de dingue ...</p>
+            <p>On a rien sans rien comme on dit !</p>
+          </div>
+          <div data-aos="fade-up-left" data-aos-offset="250"> <a href="#">C'est par ici qu'on signe</a></div>
         </div>
       </div>
     </section>
@@ -113,7 +126,7 @@
           <p>Vous êtes convaincus ?</p>
           <div>
             <iframe src="assets/images/svg/quotes.svg">
-              <img  alt="Image de guillemets pour une citation" class="quotes">
+              <img alt="Image de guillemets pour une citation" class="quotes">
             </iframe>
             <h1>Alors remplissez ça :)</h1>
           </div>
@@ -193,6 +206,10 @@
   <script defer src="./assets/js/script.bundle.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
