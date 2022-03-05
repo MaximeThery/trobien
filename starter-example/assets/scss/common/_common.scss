@@ -258,30 +258,49 @@ header img {
   position: relative;
   overflow: hidden;
 }
-.Lights__img img:nth-child(1){
+
+.Lights__img .lampe{
+  background-image: url("/assets/images/lampe.png");
+  background-size: contain;
   position: absolute;
-  bottom: -14%;
-  max-width: none;
-  left: -5%;
-  right: -10rem;
-  width: 115%;
-  z-index: 2;
+  top: -2%;
+  z-index: 1;
+  width: 13%;
+  height: 100%;
+  background-repeat: no-repeat;
 }
 
-.Lights__img .bras-2{
+.Lights__img .lampe-light{
+  background-image: url("/assets/images/lampe allume.png");
+  background-size: contain;
   position: absolute;
-  bottom: -5%;
   z-index: 1;
-  right: 43%;
-  width: 15%;
+  width: 20%;
+  height: 100%;
+  background-repeat: no-repeat;
+  transform : rotate(20deg);
 }
-.Lights__img .bras{
-  position: absolute;
+
+.left-light{
+  left: 12%;
   top: -10%;
-  z-index: 1;
-  left: 0%;
-  width: 53%;
 }
+.Lights__img .right-light{
+  left: 35%;
+  top:-2%;
+  transform:scaleX(-1) rotate(-10deg);
+}
+
+.right{
+  right: 2%;
+}
+.middle{
+  right: 16%;
+}
+.left{
+  right: 30%;
+}
+
 .Lights__text a{
   background-color: var(--texte);
   border-radius: 1rem;

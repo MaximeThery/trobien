@@ -23,15 +23,23 @@ class Menu {
             entries.forEach((entry)=>{
                 const id = entry.target.id;
                 if(entry.intersectionRatio > 0){
-                    if (id == "bouee"){
+                    if (id === "bouee"){
                         console.log("elle est passé en viewport",id);
                         entry.target.classList.add("bouee-visible");
                     }
+                    else if (id === "light"){
+                        console.log("elle est passé en viewport",id);
+                        entry.target.classList.add("light-visible");
+                    }
                 }
                 else {
-                    if (id == "bouee"){
+                    if (id === "bouee"){
                         console.log("viewport est partie",id);
                         entry.target.classList.remove("bouee-visible");
+                    }
+                    else if (id === "light"){
+                        console.log("viewport est partie",id);
+                        entry.target.classList.remove("light-visible");
                     }
                 }
             })
