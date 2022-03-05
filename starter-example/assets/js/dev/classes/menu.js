@@ -10,7 +10,7 @@ class Menu {
         this.init();
         barba.hooks.after((_) => {
             this.init();
-        });
+        }); 
     }
 
     init() {
