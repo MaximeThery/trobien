@@ -16,10 +16,6 @@ h1 {
   color: var(--texte);
   font-weight: 100;
 }
-.barre{
-  height: 30rem;
-  width: auto;
-}
 
 :root{
 --texte:#FF0068;
@@ -251,6 +247,7 @@ header img {
 }
 .Lights__img {
   width: 50%;
+  height: 100%;
 }
 .Lights__img{
   background-color: #F8AF00;
@@ -259,17 +256,43 @@ header img {
   overflow: hidden;
 }
 
-.Lights__img .lampe{
-  background-image: url("/assets/images/lampe.png");
-  background-size: contain;
-  position: absolute;
-  top: -2%;
-  z-index: 1;
-  width: 13%;
-  height: 100%;
-  background-repeat: no-repeat;
+
+.light-visible .right-light-anim{
+  animation-name:  left-light-animation;
+  animation-duration: 5s;
+}
+.light-visible .left-light-anim{
+  animation-name: right-light-animation;
+  animation-duration: 5s;
 }
 
+
+
+.light-visible .left-anim{
+  animation-name: left;
+  animation-duration: 4s;
+}
+
+.Lights__img .right-light{
+  left: 40%;
+  top:-3%;
+  transform:scaleX(-1) rotate(-9deg);
+}
+
+.light-visible .middle-anim{
+  animation-name: middle;
+  animation-duration: 4s;
+}
+
+.light-visible .right-anim{
+  animation-name: right;
+  animation-duration: 4s;
+}
+.left-light{
+  left: 32%;
+  top: -5%;
+  transform : rotate(24deg);
+}
 .Lights__img .lampe-light{
   background-image: url("/assets/images/lampe allume.png");
   background-size: contain;
@@ -278,27 +301,31 @@ header img {
   width: 20%;
   height: 100%;
   background-repeat: no-repeat;
-  transform : rotate(20deg);
+  transform-origin: top center;
 }
+.Lights__img .lampe{
+  background-image: url("/assets/images/lampe.png");
+  background-size: contain;
+  position: absolute;
+  top: -2%;
+  z-index: 1;
+  width: 20%;
+  height: 100%;
+  background-repeat: no-repeat;
+  transform-origin: top center;
 
-.left-light{
-  left: 12%;
-  top: -10%;
-}
-.Lights__img .right-light{
-  left: 35%;
-  top:-2%;
-  transform:scaleX(-1) rotate(-10deg);
-}
-
-.right{
-  right: 2%;
-}
-.middle{
-  right: 16%;
 }
 .left{
   right: 30%;
+}
+
+.middle{
+  right: 16%;
+}
+
+
+.right{
+  right: 2%;
 }
 
 .Lights__text a{
@@ -463,8 +490,14 @@ iframe{
 }
 .barre {
   height: 30rem;
-
-  width: auto;
+  background-image: url("/assets/images/svg/convaincu.svg");
+  background-repeat: no-repeat;
+  background-size : auto 30rem;
+  width: 1%;
+}
+.barre-visible .barre {
+  animation-name: barre;
+  animation-duration: 2s;
 }
 
 /* Contact */
