@@ -559,7 +559,7 @@ textarea {
 footer {
   background-color: var(--texte);
   width: 100%;
-  height: 60vh;
+  min-height: 60vh;
   text-align: right;
 }
 footer img {
