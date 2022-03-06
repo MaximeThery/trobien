@@ -54,7 +54,7 @@ header {
   justify-content: center;
 }
 header img {
-  width: 150px;
+  width: 15rem;
 }
 
 /* Home  */
@@ -118,12 +118,12 @@ header img {
 #girafe2{
   z-index: 1;
   background-image: url("/assets/images/giraffe2.png");
-  background-size: 35rem;
+  background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   position: absolute;
-  width: 40rem ;
-  height: 30rem;
+  width: 24%;
+  height: 26%;
   top: 17.5%;
   right: 0;
   animation-duration: 9s;
@@ -148,7 +148,7 @@ header img {
   width: 22%;
   height: 85%;
   bottom: 0;
-  right: 30rem;
+  right: 18%;
 }
 
 /*  Bouee  */
